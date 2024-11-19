@@ -48,7 +48,7 @@ join customer as c on c.customer_id=r.customer_id
 where date(r.rental_date)= '2005-7-26';
 ```
 
-5. ***Distinct names of customers who rented a movie on 26th July 2005***:
+5.***Distinct names of customers who rented a movie on 26th July 2005***:
 ```sql
 select distinct r.customer_id,
        concat(c.first_name,' ',c.last_name) as "Full name"
@@ -57,7 +57,7 @@ join customer as c on c.customer_id=r.customer_id
 where date(r.rental_date)= '2005-7-26';
 ```
 
-6. ***How many rentals we do on each day?***
+6.***How many rentals we do on each day?***
 ```sql
 select date(rental_date) as "Date",count(*) as rental_count
 from rental
@@ -66,7 +66,7 @@ order by rental_count desc
 limit 1;
 ```
 
-7. ***All Sci-fi films in our catalogue***:
+7.***All Sci-fi films in our catalogue***:
 ```sql
 select fc.film_id,fc.category_id,c.name,f.title,f.release_year
 from film_category as fc 
@@ -75,7 +75,7 @@ join film as f on f.film_id = fc.film_id
 where c.name = "Sci-Fi";
 ```
 
-8. ***Customers and how many movies they rented from us so far?***:
+8.***Customers and how many movies they rented from us so far?***:
 ```sql
 select r.customer_id,c.first_name,c.email,count(*) as "count"
 from rental as r
@@ -84,7 +84,7 @@ group by c.customer_id
 order by count(*) desc;
 ```
 
-9. ***Which movies should we discontinue from our catalogue (less than 1 lifetime rentals***:
+9.***Which movies should we discontinue from our catalogue (less than 1 lifetime rentals***:
 ```sql
 with low_rentals as 
     (select inventory_id,count(*)
@@ -97,7 +97,7 @@ with low_rentals as
     join film as f on f.film_id = i.film_id;
 ```
 
-10. ***Which movies are not returned yet?***:
+10.***Which movies are not returned yet?***:
 ```sql
 select rental_date,customer_id,i.film_id,f.title
 from rental as r
