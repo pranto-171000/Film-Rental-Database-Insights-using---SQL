@@ -109,21 +109,33 @@ order by f.title;
 
 ## Findings
 
-**PG-13 Film Rentals**: A subset of films with a rental rate of 2.99 or lower proves to be popular among customers.
-**Special Features**: Many films with deleted scenes show a particular pattern in rental behavior, especially for certain titles starting with "C".
-**Sales Trends**: Monthly analysis shows variations in sales, helping identify peak seasons.
+**PG-13 Film Rentals**: A subset of films with a rental rate of 2.99 or lower proves to be popular among customers
+
+**Special Features**: Many films with deleted scenes show a particular pattern in rental behavior, especially for certain titles starting with "C"
+
+**Sales Trends**: Monthly analysis shows variations in sales, helping identify peak seasons
+
 **Customer Activity**: The active customer base is significant, with some customers having rented multiple films over time.
+
 **Top Rental Dates**: Peak rental dates, such as 26th July 2005, show spikes in customer engagement, which can help plan for future promotions or inventory stocking.
+
 **Sci-Fi Popularity**: Sci-Fi films show consistent demand, making it a key category for continued investment.
+
 **Underperforming Films**: A number of films with fewer than 1 rental indicate potential candidates for discontinuation or re-promotion.
--**Unreturned Movies**: There is a notable number of films still not returned, suggesting potential customer behavior insights or loss tracking.
+
+**Unreturned Movies**: There is a notable number of films still not returned, suggesting potential customer behavior insights or loss tracking.
+
 
 ## Reports
 
--**Film and Rental Performance**: A detailed summary report identifying the most and least rented films, categorized by genre and rental rate.
--**Customer Activity Report**: Insights on customer activity, including who rented the most films and how many rentals were made on specific dates.
--**Low-Rentals Analysis**: A report identifying films with the fewest rentals, highlighting those that may not be worth maintaining in the inventory.
--**Unreturned Films Report**: A list of films that have not been returned, aiding in loss prevention or policy enforcement.
+**Film and Rental Performance**: A detailed summary report identifying the most and least rented films, categorized by genre and rental rate.
+
+**Customer Activity Report**: Insights on customer activity, including who rented the most films and how many rentals were made on specific dates.
+
+**Low-Rentals Analysis**: A report identifying films with the fewest rentals, highlighting those that may not be worth maintaining in the inventory.
+
+**Unreturned Films Report**: A list of films that have not been returned, aiding in loss prevention or policy enforcement.
+
 
 ## Conclusion
 
