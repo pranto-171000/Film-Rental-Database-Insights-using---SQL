@@ -21,7 +21,7 @@ This project focuses on exploring a film rental database and leveraging SQL quer
 
 The following SQL queries were developed to answer specific business questions:
 
-1. ***All films with PG-13 films with rental rate of 2.99 or lower:***:
+1. ***All films with PG-13 films with rental rate of 2.99 or lower:***
 ```sql
 select * from film as f
 where f.rental_rate<= 2.99 and f.rating='PG-13';	
