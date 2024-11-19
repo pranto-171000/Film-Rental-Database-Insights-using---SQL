@@ -1,6 +1,5 @@
 # Film-Rental-Database-Insights-using---SQL
 
-# Film Rental Database Insights using - SQL
 ## Project Overview
 
 **Project Title**: Film Rental Analysis
